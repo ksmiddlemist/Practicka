@@ -3,7 +3,7 @@ import sys
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QMainWindow, QApplication
 
-from handle_windows import  setup_physical_keyboard_handlers
+from handle_keys import  setup_physical_keyboard_handlers
 from macos_key_map import macos_key_map
 from qtui.keyboard1 import Ui_MainWindowK1
 from qtui.keyboard2 import Ui_MainWindowK2

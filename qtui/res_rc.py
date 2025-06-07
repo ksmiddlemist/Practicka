@@ -1,0 +1,705 @@
+# Resource object code (Python 3)
+# Created by: object code
+# Created by: The Resource Compiler for Qt version 6.9.1
+# WARNING! All changes made in this file will be lost!
+
+from PySide6 import QtCore
+
+qt_resource_data = b"\
+\x00\x00\x01H\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-fast-fo\
+rward-icon lucid\
+e-fast-forward\x22>\
+<polygon points=\
+\x2213 19 22 12 13 \
+5 13 19\x22/><polyg\
+on points=\x222 19 \
+11 12 2 5 2 19\x22/\
+></svg>\
+\x00\x00\x01!\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-arrow-l\
+eft-icon lucide-\
+arrow-left\x22><pat\
+h d=\x22m12 19-7-7 \
+7-7\x22/><path d=\x22M\
+19 12H5\x22/></svg>\
+\
+\x00\x00\x01:\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-arrow-b\
+ig-up-dash-icon \
+lucide-arrow-big\
+-up-dash\x22><path \
+d=\x22M9 19h6\x22/><pa\
+th d=\x22M9 15v-3H5\
+l7-7 7 7h-4v3H9z\
+\x22/></svg>\
+\x00\x00\x01@\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-command\
+-icon lucide-com\
+mand\x22><path d=\x22M\
+15 6v12a3 3 0 1 \
+0 3-3H6a3 3 0 1 \
+0 3 3V6a3 3 0 1 \
+0-3 3h12a3 3 0 1\
+ 0-3-3\x22/></svg>\
+\x00\x00\x01\xd6\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-sun-dim\
+-icon lucide-sun\
+-dim\x22><circle cx\
+=\x2212\x22 cy=\x2212\x22 r=\
+\x224\x22/><path d=\x22M1\
+2 4h.01\x22/><path \
+d=\x22M20 12h.01\x22/>\
+<path d=\x22M12 20h\
+.01\x22/><path d=\x22M\
+4 12h.01\x22/><path\
+ d=\x22M17.657 6.34\
+3h.01\x22/><path d=\
+\x22M17.657 17.657h\
+.01\x22/><path d=\x22M\
+6.343 17.657h.01\
+\x22/><path d=\x22M6.3\
+43 6.343h.01\x22/><\
+/svg>\
+\x00\x00\x01\xc8\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-keyboar\
+d-icon lucide-ke\
+yboard\x22><path d=\
+\x22M10 8h.01\x22/><pa\
+th d=\x22M12 12h.01\
+\x22/><path d=\x22M14 \
+8h.01\x22/><path d=\
+\x22M16 12h.01\x22/><p\
+ath d=\x22M18 8h.01\
+\x22/><path d=\x22M6 8\
+h.01\x22/><path d=\x22\
+M7 16h10\x22/><path\
+ d=\x22M8 12h.01\x22/>\
+<rect width=\x2220\x22\
+ height=\x2216\x22 x=\x22\
+2\x22 y=\x224\x22 rx=\x222\x22/\
+></svg>\
+\x00\x00\x01\xb2\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-grip-ho\
+rizontal-icon lu\
+cide-grip-horizo\
+ntal\x22><circle cx\
+=\x2212\x22 cy=\x229\x22 r=\x22\
+1\x22/><circle cx=\x22\
+19\x22 cy=\x229\x22 r=\x221\x22\
+/><circle cx=\x225\x22\
+ cy=\x229\x22 r=\x221\x22/><\
+circle cx=\x2212\x22 c\
+y=\x2215\x22 r=\x221\x22/><c\
+ircle cx=\x2219\x22 cy\
+=\x2215\x22 r=\x221\x22/><ci\
+rcle cx=\x225\x22 cy=\x22\
+15\x22 r=\x221\x22/></svg\
+>\
+\x00\x00\x01J\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-pause-i\
+con lucide-pause\
+\x22><rect x=\x2214\x22 y\
+=\x224\x22 width=\x224\x22 h\
+eight=\x2216\x22 rx=\x221\
+\x22/><rect x=\x226\x22 y\
+=\x224\x22 width=\x224\x22 h\
+eight=\x2216\x22 rx=\x221\
+\x22/></svg>\
+\x00\x00\x01\x99\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-notepad\
+-text-icon lucid\
+e-notepad-text\x22>\
+<path d=\x22M8 2v4\x22\
+/><path d=\x22M12 2\
+v4\x22/><path d=\x22M1\
+6 2v4\x22/><rect wi\
+dth=\x2216\x22 height=\
+\x2218\x22 x=\x224\x22 y=\x224\x22\
+ rx=\x222\x22/><path d\
+=\x22M8 10h6\x22/><pat\
+h d=\x22M8 14h8\x22/><\
+path d=\x22M8 18h5\x22\
+/></svg>\
+\x00\x00\x01\x1c\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-arrow-u\
+p-icon lucide-ar\
+row-up\x22><path d=\
+\x22m5 12 7-7 7 7\x22/\
+><path d=\x22M12 19\
+V5\x22/></svg>\
+\x00\x00\x01\x9f\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-volume-\
+icon lucide-volu\
+me\x22><path d=\x22M11\
+ 4.702a.705.705 \
+0 0 0-1.203-.498\
+L6.413 7.587A1.4\
+ 1.4 0 0 1 5.416\
+ 8H3a1 1 0 0 0-1\
+ 1v6a1 1 0 0 0 1\
+ 1h2.416a1.4 1.4\
+ 0 0 1 .997.413l\
+3.383 3.384A.705\
+.705 0 0 0 11 19\
+.298z\x22/></svg>\
+\x00\x00\x01\xbf\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-layout-\
+dashboard-icon l\
+ucide-layout-das\
+hboard\x22><rect wi\
+dth=\x227\x22 height=\x22\
+9\x22 x=\x223\x22 y=\x223\x22 r\
+x=\x221\x22/><rect wid\
+th=\x227\x22 height=\x225\
+\x22 x=\x2214\x22 y=\x223\x22 r\
+x=\x221\x22/><rect wid\
+th=\x227\x22 height=\x229\
+\x22 x=\x2214\x22 y=\x2212\x22 \
+rx=\x221\x22/><rect wi\
+dth=\x227\x22 height=\x22\
+5\x22 x=\x223\x22 y=\x2216\x22 \
+rx=\x221\x22/></svg>\
+\x00\x00\x01\x0d\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-chevron\
+-up-icon lucide-\
+chevron-up\x22><pat\
+h d=\x22m18 15-6-6-\
+6 6\x22/></svg>\
+\x00\x00\x01\x17\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-option-\
+icon lucide-opti\
+on\x22><path d=\x22M3 \
+3h6l6 18h6\x22/><pa\
+th d=\x22M14 3h7\x22/>\
+</svg>\
+\x00\x00\x01>\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-rewind-\
+icon lucide-rewi\
+nd\x22><polygon poi\
+nts=\x2211 19 2 12 \
+11 5 11 19\x22/><po\
+lygon points=\x2222\
+ 19 13 12 22 5 2\
+2 19\x22/></svg>\
+\x00\x00\x01\x1f\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-move-le\
+ft-icon lucide-m\
+ove-left\x22><path \
+d=\x22M6 8L2 12L6 1\
+6\x22/><path d=\x22M2 \
+12H22\x22/></svg>\
+\x00\x00\x01!\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-arrow-d\
+own-icon lucide-\
+arrow-down\x22><pat\
+h d=\x22M12 5v14\x22/>\
+<path d=\x22m19 12-\
+7 7-7-7\x22/></svg>\
+\
+\x00\x00\x01\xc1\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-volume1\
+-icon lucide-vol\
+ume-1\x22><path d=\x22\
+M11 4.702a.705.7\
+05 0 0 0-1.203-.\
+498L6.413 7.587A\
+1.4 1.4 0 0 1 5.\
+416 8H3a1 1 0 0 \
+0-1 1v6a1 1 0 0 \
+0 1 1h2.416a1.4 \
+1.4 0 0 1 .997.4\
+13l3.383 3.384A.\
+705.705 0 0 0 11\
+ 19.298z\x22/><path\
+ d=\x22M16 9a5 5 0 \
+0 1 0 6\x22/></svg>\
+\
+\x00\x00\x01\xee\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-volume2\
+-icon lucide-vol\
+ume-2\x22><path d=\x22\
+M11 4.702a.705.7\
+05 0 0 0-1.203-.\
+498L6.413 7.587A\
+1.4 1.4 0 0 1 5.\
+416 8H3a1 1 0 0 \
+0-1 1v6a1 1 0 0 \
+0 1 1h2.416a1.4 \
+1.4 0 0 1 .997.4\
+13l3.383 3.384A.\
+705.705 0 0 0 11\
+ 19.298z\x22/><path\
+ d=\x22M16 9a5 5 0 \
+0 1 0 6\x22/><path \
+d=\x22M19.364 18.36\
+4a9 9 0 0 0 0-12\
+.728\x22/></svg>\
+\x00\x00\x01D\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-rotate-\
+ccw-icon lucide-\
+rotate-ccw\x22><pat\
+h d=\x22M3 12a9 9 0\
+ 1 0 9-9 9.75 9.\
+75 0 0 0-6.74 2.\
+74L3 8\x22/><path d\
+=\x22M3 3v5h5\x22/></s\
+vg>\
+\x00\x00\x01\x22\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-arrow-r\
+ight-icon lucide\
+-arrow-right\x22><p\
+ath d=\x22M5 12h14\x22\
+/><path d=\x22m12 5\
+ 7 7-7 7\x22/></svg\
+>\
+\x00\x00\x01\x0f\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 width=\x2224\
+\x22 height=\x2224\x22 vi\
+ewBox=\x220 0 24 24\
+\x22 fill=\x22none\x22 st\
+roke=\x22currentCol\
+or\x22 stroke-width\
+=\x222\x22 stroke-line\
+cap=\x22round\x22 stro\
+ke-linejoin=\x22rou\
+nd\x22 class=\x22lucid\
+e lucide-plus-ic\
+on lucide-plus\x22>\
+<path d=\x22M5 12h1\
+4\x22/><path d=\x22M12\
+ 5v14\x22/></svg>\
+"
+
+qt_resource_name = b"\
+\x00\x09\
+\x0cxT\x88\
+\x00n\
+\x00e\x00w\x00P\x00r\x00e\x00f\x00i\x00x\
+\x00\x10\
+\x06\xe6\xab\xe7\
+\x00f\
+\x00a\x00s\x00t\x00-\x00f\x00o\x00r\x00w\x00a\x00r\x00d\x00.\x00s\x00v\x00g\
+\x00\x0e\
+\x08\xfa8\xa7\
+\x00a\
+\x00r\x00r\x00o\x00w\x00-\x00l\x00e\x00f\x00t\x00.\x00s\x00v\x00g\
+\x00\x15\
+\x01\xa8\x9a\xa7\
+\x00a\
+\x00r\x00r\x00o\x00w\x00-\x00b\x00i\x00g\x00-\x00u\x00p\x00-\x00d\x00a\x00s\x00h\
+\x00.\x00s\x00v\x00g\
+\x00\x0b\
+\x08\x93\x92\xa7\
+\x00c\
+\x00o\x00m\x00m\x00a\x00n\x00d\x00.\x00s\x00v\x00g\
+\x00\x0b\
+\x0a\x0d\xd8\xa7\
+\x00s\
+\x00u\x00n\x00-\x00d\x00i\x00m\x00.\x00s\x00v\x00g\
+\x00\x0c\
+\x06\xbe\xa8g\
+\x00k\
+\x00e\x00y\x00b\x00o\x00a\x00r\x00d\x00.\x00s\x00v\x00g\
+\x00\x13\
+\x0d\x1d\xb2\xc7\
+\x00g\
+\x00r\x00i\x00p\x00-\x00h\x00o\x00r\x00i\x00z\x00o\x00n\x00t\x00a\x00l\x00.\x00s\
+\x00v\x00g\
+\x00\x09\
+\x0c\x98\xb7\xc7\
+\x00p\
+\x00a\x00u\x00s\x00e\x00.\x00s\x00v\x00g\
+\x00\x10\
+\x04$\xe9'\
+\x00n\
+\x00o\x00t\x00e\x00p\x00a\x00d\x00-\x00t\x00e\x00x\x00t\x00.\x00s\x00v\x00g\
+\x00\x0c\
+\x09\xd0w\x87\
+\x00a\
+\x00r\x00r\x00o\x00w\x00-\x00u\x00p\x00.\x00s\x00v\x00g\
+\x00\x0a\
+\x0c;\xf6\xa7\
+\x00v\
+\x00o\x00l\x00u\x00m\x00e\x00.\x00s\x00v\x00g\
+\x00\x14\
+\x09\x8f\xad\xc7\
+\x00l\
+\x00a\x00y\x00o\x00u\x00t\x00-\x00d\x00a\x00s\x00h\x00b\x00o\x00a\x00r\x00d\x00.\
+\x00s\x00v\x00g\
+\x00\x0e\
+\x09Xl\x87\
+\x00c\
+\x00h\x00e\x00v\x00r\x00o\x00n\x00-\x00u\x00p\x00.\x00s\x00v\x00g\
+\x00\x0a\
+\x00o\x95\xa7\
+\x00o\
+\x00p\x00t\x00i\x00o\x00n\x00.\x00s\x00v\x00g\
+\x00\x0a\
+\x00HC\x07\
+\x00r\
+\x00e\x00w\x00i\x00n\x00d\x00.\x00s\x00v\x00g\
+\x00\x0d\
+\x03\x0eSG\
+\x00m\
+\x00o\x00v\x00e\x00-\x00l\x00e\x00f\x00t\x00.\x00s\x00v\x00g\
+\x00\x0e\
+\x06\x0c\x07\x87\
+\x00a\
+\x00r\x00r\x00o\x00w\x00-\x00d\x00o\x00w\x00n\x00.\x00s\x00v\x00g\
+\x00\x0c\
+\x0b\xb0\x22\xa7\
+\x00v\
+\x00o\x00l\x00u\x00m\x00e\x00-\x001\x00.\x00s\x00v\x00g\
+\x00\x0c\
+\x0b\xa9\x22\xa7\
+\x00v\
+\x00o\x00l\x00u\x00m\x00e\x00-\x002\x00.\x00s\x00v\x00g\
+\x00\x0e\
+\x04\xfb\x0c\xe7\
+\x00r\
+\x00o\x00t\x00a\x00t\x00e\x00-\x00c\x00c\x00w\x00.\x00s\x00v\x00g\
+\x00\x0f\
+\x0f\x22iG\
+\x00a\
+\x00r\x00r\x00o\x00w\x00-\x00r\x00i\x00g\x00h\x00t\x00.\x00s\x00v\x00g\
+\x00\x08\
+\x03\xc6T'\
+\x00p\
+\x00l\x00u\x00s\x00.\x00s\x00v\x00g\
+"
+
+qt_resource_struct = b"\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x16\x00\x00\x00\x02\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x01\xf2\x00\x00\x00\x00\x00\x01\x00\x00\x13\xec\
+\x00\x00\x01\x97@\xd0\x91`\
+\x00\x00\x01\xd8\x00\x00\x00\x00\x00\x01\x00\x00\x12\xd1\
+\x00\x00\x01\x97@\xb6\xf6\xb0\
+\x00\x00\x00`\x00\x00\x00\x00\x00\x01\x00\x00\x02q\
+\x00\x00\x01\x97@\xb9\xbd\xa0\
+\x00\x00\x02\x0c\x00\x00\x00\x00\x00\x01\x00\x00\x15.\
+\x00\x00\x01\x970\xbb\xee\x00\
+\x00\x00\x02\xd0\x00\x00\x00\x00\x00\x01\x00\x00\x1d\x9b\
+\x00\x00\x01\x970\xbdM\x90\
+\x00\x00\x01*\x00\x00\x00\x00\x00\x01\x00\x00\x0b\x9d\
+\x00\x00\x01\x970\xe8l\xa0\
+\x00\x00\x02\x8a\x00\x00\x00\x00\x00\x01\x00\x00\x1b-\
+\x00\x00\x01\x970\xbc\xc0\xf0\
+\x00\x00\x02,\x00\x00\x00\x00\x00\x01\x00\x00\x16Q\
+\x00\x00\x01\x970\xb8\xf0`\
+\x00\x00\x00\xc8\x00\x00\x00\x00\x00\x01\x00\x00\x06\xcd\
+\x00\x00\x01\x970\xba_\x90\
+\x00\x00\x00\x18\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
+\x00\x00\x01\x97@\xd0\x990\
+\x00\x00\x00\x90\x00\x00\x00\x00\x00\x01\x00\x00\x03\xaf\
+\x00\x00\x01\x97@\xb6\xc0\x00\
+\x00\x00\x00>\x00\x00\x00\x00\x00\x01\x00\x00\x01L\
+\x00\x00\x01\x970\xb9\x0f\xa0\
+\x00\x00\x01\xb6\x00\x00\x00\x00\x00\x01\x00\x00\x11\xc0\
+\x00\x00\x01\x97@\xb6\xc7\xd0\
+\x00\x00\x01\x88\x00\x00\x00\x00\x00\x01\x00\x00\x0f\xfd\
+\x00\x00\x01\x97@\xc9.\xc0\
+\x00\x00\x01P\x00\x00\x00\x00\x00\x01\x00\x00\x0d:\
+\x00\x00\x01\x970\xb9'\x10\
+\x00\x00\x00\xac\x00\x00\x00\x00\x00\x01\x00\x00\x04\xf3\
+\x00\x00\x01\x97@\xbf[ \
+\x00\x00\x02l\x00\x00\x00\x00\x00\x01\x00\x00\x19;\
+\x00\x00\x01\x97@\xcf1\xd0\
+\x00\x00\x02N\x00\x00\x00\x00\x00\x01\x00\x00\x17v\
+\x00\x00\x01\x97@\xcf*\x00\
+\x00\x00\x01n\x00\x00\x00\x00\x00\x01\x00\x00\x0eZ\
+\x00\x00\x01\x97@\xcf\x12\x90\
+\x00\x00\x01\x12\x00\x00\x00\x00\x00\x01\x00\x00\x0aO\
+\x00\x00\x01\x97@\xd1\x0e`\
+\x00\x00\x00\xe6\x00\x00\x00\x00\x00\x01\x00\x00\x08\x99\
+\x00\x00\x01\x97@\xc2\xb6\x80\
+\x00\x00\x02\xac\x00\x00\x00\x00\x00\x01\x00\x00\x1cu\
+\x00\x00\x01\x970\xb9FP\
+"
+
+def qInitResources():
+    QtCore.qRegisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+def qCleanupResources():
+    QtCore.qUnregisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+qInitResources()

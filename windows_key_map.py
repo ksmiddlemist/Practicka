@@ -1,151 +1,545 @@
 def windows_key_map(ui):
     return {
-        # Одиночные клавиши (is_pair=False)
-        0x1B: {"is_pair": False, "widget": ui.key_Esc},  # Esc
-        0x70: {"is_pair": False, "widget": ui.key_f1},   # F1
-        0x71: {"is_pair": False, "widget": ui.key_f2},   # F2
-        0x72: {"is_pair": False, "widget": ui.key_f3},   # F3
-        0x73: {"is_pair": False, "widget": ui.key_f4},   # F4
-        0x74: {"is_pair": False, "widget": ui.key_f5},   # F5
-        0x75: {"is_pair": False, "widget": ui.key_f6},   # F6
-        0x76: {"is_pair": False, "widget": ui.key_f7},   # F7
-        0x77: {"is_pair": False, "widget": ui.key_f8},   # F8
-        0x78: {"is_pair": False, "widget": ui.key_f9},   # F9
-        0x79: {"is_pair": False, "widget": ui.key_f10},  # F10
-        0x7A: {"is_pair": False, "widget": ui.key_f11},  # F11
-        0x7B: {"is_pair": False, "widget": ui.key_f12},  # F12
-        0x2C: {"is_pair": False, "widget": ui.key_PrtScr},  # PrtScr
-        0x91: {"is_pair": False, "widget": ui.key_ScrollLock},  # ScrollLock
-        0x13: {"is_pair": False, "widget": ui.key_PauseBreak},  # PauseBreak
+        # Первый ряд (функциональные клавиши)
+        "esc": {
+            "vk": {"win": 0x1B, "mac": 0x35},
+            "widget": ui.key_Esc,
+            
+        },
+        "f1": {
+            "vk": {"win": 0x70, "mac": 0x7A},
+            "widget": ui.key_f1,
+            
+        },
+        "f2": {
+            "vk": {"win": 0x71, "mac": 0x78},
+            "widget": ui.key_f2,
+            
+        },
+        "f3": {
+            "vk": {"win": 0x72, "mac": 0x63},
+            "widget": ui.key_f3,
+            
+        },
+        "f4": {
+            "vk": {"win": 0x73, "mac": 0x76},
+            "widget": ui.key_f4,
+            
+        },
+        "f5": {
+            "vk": {"win": 0x74, "mac": 0x60},
+            "widget": ui.key_f5,
+            
+        },
+        "f6": {
+            "vk": {"win": 0x75, "mac": 0x61},
+            "widget": ui.key_f6,
+            
+        },
+        "f7": {
+            "vk": {"win": 0x76, "mac": 0x62},
+            "widget": ui.key_f7,
+            
+        },
+        "f8": {
+            "vk": {"win": 0x77, "mac": 0x64},
+            "widget": ui.key_f8,
+            
+        },
+        "f9": {
+            "vk": {"win": 0x78, "mac": 0x65},
+            "widget": ui.key_f9,
+            
+        },
+        "f10": {
+            "vk": {"win": 0x79, "mac": 0x6D},
+            "widget": ui.key_f10,
+            
+        },
+        "f11": {
+            "vk": {"win": 0x7A, "mac": 0x67},
+            "widget": ui.key_f11,
+            
+        },
+        "f12": {
+            "vk": {"win": 0x7B, "mac": 0x6F},
+            "widget": ui.key_f12,
+            
+        },
+        "prtscr": {
+            "vk": {"win": 0x2C, "mac": 0x69},  # Mac: F13
+            "widget": ui.key_PrtScr,
+            
+        },
+        "scroll_lock": {
+            "vk": {"win": 0x91, "mac": 0x6B},  # Mac: F14
+            "widget": ui.key_ScrollLock,
+            
+        },
+        "pause": {
+            "vk": {"win": 0x13, "mac": 0x71},  # Mac: F15
+            "widget": ui.key_PauseBreak,
+            
+        },
 
-        # Второй ряд
-        0xC0: {"is_pair": False, "widget": ui.key_tilda},  # ~
-        0x31: {"is_pair": False, "widget": ui.key_t_1},    # 1
-        0x32: {"is_pair": False, "widget": ui.key_t_2},    # 2
-        0x33: {"is_pair": False, "widget": ui.key_t_3},    # 3
-        0x34: {"is_pair": False, "widget": ui.key_t_4},    # 4
-        0x35: {"is_pair": False, "widget": ui.key_t_5},    # 5
-        0x36: {"is_pair": False, "widget": ui.key_t_6},    # 6
-        0x37: {"is_pair": False, "widget": ui.key_t_7},    # 7
-        0x38: {"is_pair": False, "widget": ui.key_t_8},    # 8
-        0x39: {"is_pair": False, "widget": ui.key_t_9},    # 9
-        0x30: {"is_pair": False, "widget": ui.key_t_0},    # 0
-        0xBD: {"is_pair": False, "widget": ui.key_underscore},  # -
-        0xBB: {"is_pair": False, "widget": ui.key_plus},  # +
-        0x08: {"is_pair": False, "widget": ui.key_backspace},  # Backspace
-        0x2D: {"is_pair": True, "widgets": {  # Insert
-            "default": ui.key_Insert,
-            "pairs": [
-                {"scan_code": 0x52, "widget": ui.key_Insert},
-                {"scan_code": 0xE052, "widget": ui.key_Ins}
-            ]
-        }},
-        0x24: {"is_pair": False, "widget": ui.key_Home},  # Home
-        0x21: {"is_pair": False, "widget": ui.key_PageUp},  # PageUp
+        # Второй ряд (цифры)
+        "backtick": {
+            "vk": {"win": 0xC0, "mac": 0x32},
+            "widget": ui.key_tilda,
+            
+        },
+        "1": {
+            "vk": {"win": 0x31, "mac": 0x12},
+            "widget": ui.key_t_1,
+            
+        },
+        "2": {
+            "vk": {"win": 0x32, "mac": 0x13},
+            "widget": ui.key_t_2,
+            
+        },
+        "3": {
+            "vk": {"win": 0x33, "mac": 0x14},
+            "widget": ui.key_t_3,
+            
+        },
+        "4": {
+            "vk": {"win": 0x34, "mac": 0x15},
+            "widget": ui.key_t_4,
+            
+        },
+        "5": {
+            "vk": {"win": 0x35, "mac": 0x17},
+            "widget": ui.key_t_5,
+            
+        },
+        "6": {
+            "vk": {"win": 54, "mac": 0x16},
+            "widget": ui.key_t_6,
+            
+        },
+        "7": {
+            "vk": {"win": 0x37, "mac": 0x1A},
+            "widget": ui.key_t_7,
+            
+        },
+        "8": {
+            "vk": {"win": 0x38, "mac": 0x1C},
+            "widget": ui.key_t_8,
+            
+        },
+        "9": {
+            "vk": {"win": 0x39, "mac": 0x19},
+            "widget": ui.key_t_9,
+            
+        },
+        "0": {
+            "vk": {"win": 0x30, "mac": 0x1D},
+            "widget": ui.key_t_0,
+            
+        },
+        "minus": {
+            "vk": {"win": 0xBD, "mac": 0x1B},
+            "widget": ui.key_underscore,
+            
+        },
+        "equal": {
+            "vk": {"win": 0xBB, "mac": 0x18},
+            "widget": ui.key_plus,
+            
+        },
+        "backspace": {
+            "vk": {"win": 0x08, "mac": 0x33},
+            "widget": ui.key_backspace,
+            
+        },
 
-        # Третий ряд
-        9: {"is_pair": False, "widget": ui.key_Tab},  # Tab
-        0x51: {"is_pair": False, "widget": ui.key_Q},    # Q
-        0x57: {"is_pair": False, "widget": ui.key_W},    # W
-        0x45: {"is_pair": False, "widget": ui.key_E},    # E
-        0x52: {"is_pair": False, "widget": ui.key_R},    # R
-        0x54: {"is_pair": False, "widget": ui.key_T},    # T
-        0x59: {"is_pair": False, "widget": ui.key_Y},    # Y
-        0x55: {"is_pair": False, "widget": ui.key_U},    # U
-        0x49: {"is_pair": False, "widget": ui.key_I},    # I
-        0x4F: {"is_pair": False, "widget": ui.key_O},    # O
-        0x50: {"is_pair": False, "widget": ui.key_P},    # P
-        0xDB: {"is_pair": False, "widget": ui.key_l_bracket},  # [
-        0xDD: {"is_pair": False, "widget": ui.key_R_bracket},  # ]
-        0xDC: {"is_pair": False, "widget": ui.key_backslash},  # \
-        0x2E: {"is_pair": False, "widget": ui.key_Delete},  # Delete
-        0x23: {"is_pair": False, "widget": ui.key_End},  # End
-        0x22: {"is_pair": False, "widget": ui.key_PageDown},  # PageDown
+        # Навигационные клавиши
+        "insert": {
+            "vk": {"win": 0x2D, "mac": 0x72},
+            "widget": ui.key_Insert,
+            
+        },
+        "insert2": {
+            "vk": {"win": 0xE052, "mac": 0x72},
+            "widget": ui.key_Ins,
+            
+        },
+        "home": {
+            "vk": {"win": 0x24, "mac": 0x73},
+            "widget": ui.key_Home,
+            
+        },
+        "page_up": {
+            "vk": {"win": 0x21, "mac": 0x74},
+            "widget": ui.key_PageUp,
+            
+        },
 
-        # Четвертый ряд
-        0x14: {"is_pair": False, "widget": ui.key_Caps},  # Caps
-        0x41: {"is_pair": False, "widget": ui.key_A},    # A
-        0x53: {"is_pair": False, "widget": ui.key_S},    # S
-        0x44: {"is_pair": False, "widget": ui.key_D},    # D
-        0x46: {"is_pair": False, "widget": ui.key_F},    # F
-        0x47: {"is_pair": False, "widget": ui.key_G},    # G
-        0x48: {"is_pair": False, "widget": ui.key_H},    # H
-        0x4A: {"is_pair": False, "widget": ui.key_J},    # J
-        0x4B: {"is_pair": False, "widget": ui.key_K},    # K
-        0x4C: {"is_pair": False, "widget": ui.key_L},    # L
-        0xBA: {"is_pair": False, "widget": ui.key_colon},  # ;
-        0xDE: {"is_pair": False, "widget": ui.key_backtick},  # '
-        0x0D: {"is_pair": True, "widgets": {  # Enter
-            "default": ui.key_Enter,
-            "pairs": [
-                {"scan_code": 0x1C, "widget": ui.key_Enter},
-                {"scan_code": 0xE01C, "widget": ui.key_Enter_2}
-            ]
-        }},
+        # Третий ряд (буквы Q-P)
+        "tab": {
+            "vk": {"win": 0x09, "mac": 0x30},
+            "widget": ui.key_Tab,
+            
+        },
+        "q": {
+            "vk": {"win": 0x51, "mac": 0x0C},
+            "widget": ui.key_Q,
+            
+        },
+        "w": {
+            "vk": {"win": 0x57, "mac": 0x0D},
+            "widget": ui.key_W,
+            
+        },
+        "e": {
+            "vk": {"win": 0x45, "mac": 0x0E},
+            "widget": ui.key_E,
+            
+        },
+        "r": {
+            "vk": {"win": 0x52, "mac": 0x0F},
+            "widget": ui.key_R,
+            
+        },
+        "t": {
+            "vk": {"win": 0x54, "mac": 0x11},
+            "widget": ui.key_T,
+            
+        },
+        "y": {
+            "vk": {"win": 0x59, "mac": 0x10},
+            "widget": ui.key_Y,
+            
+        },
+        "u": {
+            "vk": {"win": 0x55, "mac": 0x20},
+            "widget": ui.key_U,
+            
+        },
+        "i": {
+            "vk": {"win": 0x49, "mac": 0x22},
+            "widget": ui.key_I,
+            
+        },
+        "o": {
+            "vk": {"win": 0x4F, "mac": 0x1F},
+            "widget": ui.key_O,
+            
+        },
+        "p": {
+            "vk": {"win": 0x50, "mac": 0x23},
+            "widget": ui.key_P,
+            
+        },
+        "left_bracket": {
+            "vk": {"win": 0xDB, "mac": 0x21},
+            "widget": ui.key_l_bracket,
+            
+        },
+        "right_bracket": {
+            "vk": {"win": 0xDD, "mac": 0x1E},
+            "widget": ui.key_R_bracket,
+            
+        },
+        "backslash": {
+            "vk": {"win": 0xDC, "mac": 0x2A},
+            "widget": ui.key_backslash,
+            
+        },
+        "delete": {
+            "vk": {"win": 0x2E, "mac": 0x75},
+            "widget": ui.key_Delete,
+            
+        },
+        "end": {
+            "vk": {"win": 0x23, "mac": 0x77},
+            "widget": ui.key_End,
+            
+        },
+        "page_down": {
+            "vk": {"win": 0x22, "mac": 0x79},
+            "widget": ui.key_PageDown,
+            
+        },
 
-        # Пятый ряд (модификаторы)
-        16: {"is_pair": True, "widgets": {  # LShift/RShift
-            "default": ui.key_Shift,
-            "pairs": [
-                {"scan_code": 0x2A, "widget": ui.key_Shift},
-                {"scan_code": 0x36, "widget": ui.key_Shift_2}
-            ]
-        }},
-        0x5A: {"is_pair": False, "widget": ui.key_Z},    # Z
-        0x58: {"is_pair": False, "widget": ui.key_X},    # X
-        0x43: {"is_pair": False, "widget": ui.key_C},    # C
-        0x56: {"is_pair": False, "widget": ui.key_V},    # V
-        0x42: {"is_pair": False, "widget": ui.key_B},    # B
-        0x4E: {"is_pair": False, "widget": ui.key_N},    # N
-        0x4D: {"is_pair": False, "widget": ui.key_M},    # M
-        0xBC: {"is_pair": False, "widget": ui.key_comma},  # ,
-        0xBE: {"is_pair": False, "widget": ui.key_point},  # .
-        0xBF: {"is_pair": False, "widget": ui.key_slash},  # /
-        38: {"is_pair": False, "widget": ui.key_up},    # Up
+        # Четвертый ряд (буквы A-L)
+        "caps": {
+            "vk": {"win": 0x14, "mac": 0x39},
+            "widget": ui.key_Caps,
+            
+        },
+        "a": {
+            "vk": {"win": 0x41, "mac": 0x00},
+            "widget": ui.key_A,
+            
+        },
+        "s": {
+            "vk": {"win": 0x53, "mac": 0x01},
+            "widget": ui.key_S,
+            
+        },
+        "d": {
+            "vk": {"win": 0x44, "mac": 0x02},
+            "widget": ui.key_D,
+            
+        },
+        "f": {
+            "vk": {"win": 0x46, "mac": 0x03},
+            "widget": ui.key_F,
+            
+        },
+        "g": {
+            "vk": {"win": 0x47, "mac": 0x05},
+            "widget": ui.key_G,
+            
+        },
+        "h": {
+            "vk": {"win": 0x48, "mac": 0x04},
+            "widget": ui.key_H,
+            
+        },
+        "j": {
+            "vk": {"win": 0x4A, "mac": 0x26},
+            "widget": ui.key_J,
+            
+        },
+        "k": {
+            "vk": {"win": 0x4B, "mac": 0x28},
+            "widget": ui.key_K,
+            
+        },
+        "l": {
+            "vk": {"win": 0x4C, "mac": 0x25},
+            "widget": ui.key_L,
+            
+        },
+        "semicolon": {
+            "vk": {"win": 0xBA, "mac": 0x29},
+            "widget": ui.key_colon,
+            
+        },
+        "quote": {
+            "vk": {"win": 0xDE, "mac": 0x27},
+            "widget": ui.key_backtick,
+            
+        },
+        "enter": {
+            "vk": {"win": 0x0D, "mac": 36},
+            "widget": ui.key_Enter,
+            
+        },
+        "enter2": {
+            "vk": {"win": 0xE01C, "mac": 76},
+            "widget": ui.key_Enter_2,
+            
+        },
 
-        # Шестой ряд (модификаторы)
-        0x11: {"is_pair": True, "widgets": {  # LCtrl/RCtrl
-            "default": ui.key_Ctrl,
-            "pairs": [
-                {"scan_code": 0x1D, "widget": ui.key_Ctrl},
-                {"scan_code": 0xE01D, "widget": ui.key_Ctrl_2}
-            ]
-        }},
-        0x5B: {"is_pair": True, "widgets": {  # LWin/RWin
-            "default": ui.key_Win,
-            "pairs": [
-                {"scan_code": 0x5B, "widget": ui.key_Win},
-                {"scan_code": 0x5C, "widget": ui.key_Win_2}
-            ]
-        }},
-        0x12: {"is_pair": True, "widgets": {  # LAlt/RAlt
-            "default": ui.key_Alt,
-            "pairs": [
-                {"scan_code": 0x38, "widget": ui.key_Alt},
-                {"scan_code": 0xE038, "widget": ui.key_Alt_2}
-            ]
-        }},
-        0x20: {"is_pair": False, "widget": ui.key_Space},  # Space
-        0x5C: {"is_pair": False, "widget": ui.key_buffer},  # Menu/Buffer
-        0x25: {"is_pair": False, "widget": ui.key_left},  # Left
-        0x28: {"is_pair": False, "widget": ui.key_down},  # Down
-        0x27: {"is_pair": False, "widget": ui.key_right},  # Right
+        # Пятый ряд (буквы Z-M)
+        "shift": {
+            "vk": {"win": 0x10, "mac": 0x38},
+            "widget": ui.key_Shift,
+            
+        },
+        "shift2": {
+            "vk": {"win": 16, "mac": 0x3C},
+            "widget": ui.key_Shift_2,
+            
+        },
+        "z": {
+            "vk": {"win": 0x5A, "mac": 0x06},
+            "widget": ui.key_Z,
+            
+        },
+        "x": {
+            "vk": {"win": 0x58, "mac": 0x07},
+            "widget": ui.key_X,
+            
+        },
+        "c": {
+            "vk": {"win": 0x43, "mac": 0x08},
+            "widget": ui.key_C,
+            
+        },
+        "v": {
+            "vk": {"win": 0x56, "mac": 0x09},
+            "widget": ui.key_V,
+            
+        },
+        "b": {
+            "vk": {"win": 0x42, "mac": 0x0B},
+            "widget": ui.key_B,
+            
+        },
+        "n": {
+            "vk": {"win": 0x4E, "mac": 0x2D},
+            "widget": ui.key_N,
+            
+        },
+        "m": {
+            "vk": {"win": 0x4D, "mac": 0x2E},
+            "widget": ui.key_M,
+            
+        },
+        "comma": {
+            "vk": {"win": 0xBC, "mac": 0x2B},
+            "widget": ui.key_comma,
+            
+        },
+        "period": {
+            "vk": {"win": 0xBE, "mac": 0x2F},
+            "widget": ui.key_point,
+            
+        },
+        "slash": {
+            "vk": {"win": 0xBF, "mac": 0x2C},
+            "widget": ui.key_slash,
+            
+        },
+        "up": {
+            "vk": {"win": 0x26, "mac": 0x7E},
+            "widget": ui.key_up,
+            
+        },
+
+        # Шестой ряд (модификаторы и пробел)
+        "ctrl": {
+            "vk": {"win": 0x11, "mac": 0x3B},
+            "widget": ui.key_Ctrl,
+            
+        },
+        "ctrl2": {
+            "vk": {"win": 0xE01D, "mac": 0x3E},
+            "widget": ui.key_Ctrl_2,
+            
+        },
+        "win": {
+            "vk": {"win": 0x5B, "mac": 0x37},
+            "widget": ui.key_Win,
+            
+        },
+        "win2": {
+            "vk": {"win": 0x5C, "mac": 0x36},
+            "widget": ui.key_Win_2,
+            
+        },
+        "alt": {
+            "vk": {"win": 0x12, "mac": 0x3A},
+            "widget": ui.key_Alt,
+            
+        },
+        "alt2": {
+            "vk": {"win": 0xE038, "mac": 0x3D},
+            "widget": ui.key_Alt_2,
+            
+        },
+        "space": {
+            "vk": {"win": 0x20, "mac": 0x31},
+            "widget": ui.key_Space,
+            
+        },
+        "menu": {
+            "vk": {"win": 0x5D, "mac": 0x6E},  # Mac: Right Click
+            "widget": ui.key_buffer,
+            
+        },
+        "left": {
+            "vk": {"win": 0x25, "mac": 0x7B},
+            "widget": ui.key_left,
+            
+        },
+        "down": {
+            "vk": {"win": 0x28, "mac": 0x7D},
+            "widget": ui.key_down,
+        },
+        "right": {
+            "vk": {"win": 0x27, "mac": 0x7C},
+            "widget": ui.key_right,
+        },
 
         # Numpad
-        0x90: {"is_pair": False, "widget": ui.key_NumLock},  # NumLock
-        0x6F: {"is_pair": False, "widget": ui.key_division},  # /
-        0x6A: {"is_pair": False, "widget": ui.key_multiplication},  # *
-        0x6D: {"is_pair": False, "widget": ui.key_minus},  # -
-        0x6B: {"is_pair": False, "widget": ui.key_plus_2},  # +
-        0x6E: {"is_pair": False, "widget": ui.key_Del},    # NumDel
-        0x67: {"is_pair": False, "widget": ui.key_seven},  # 7
-        0x68: {"is_pair": False, "widget": ui.key_eight},  # 8
-        0x69: {"is_pair": False, "widget": ui.key_nine},  # 9
-        0x64: {"is_pair": False, "widget": ui.key_four},  # 4
-        0x65: {"is_pair": False, "widget": ui.key_five},  # 5
-        0x66: {"is_pair": False, "widget": ui.key_six},  # 6
-        0x61: {"is_pair": False, "widget": ui.key_one},  # 1
-        0x62: {"is_pair": False, "widget": ui.key_two},  # 2
-        0x63: {"is_pair": False, "widget": ui.key_three},  # 3
-        0x60: {"is_pair": False, "widget": ui.key_Ins}  # 0
+        "num_lock": {
+            "vk": {"win": 0x90, "mac": 0x47},
+            "widget": ui.key_NumLock,
+        },
+        "num_divide": {
+            "vk": {"win": 0x6F, "mac": 0x4B},
+            "widget": ui.key_division,
+            
+        },
+        "num_multiply": {
+            "vk": {"win": 0x6A, "mac": 0x43},
+            "widget": ui.key_multiplication,
+            
+        },
+        "num_subtract": {
+            "vk": {"win": 0x6D, "mac": 0x4E},
+            "widget": ui.key_minus,
+            
+        },
+        "num_add": {
+            "vk": {"win": 0x6B, "mac": 0x45},
+            "widget": ui.key_plus_2,
+            
+        },
+        "num_enter": {
+            "vk": {"win": 0x0D, "mac": 0x4C},
+            "widget": ui.key_Enter_2,
+            
+        },
+        "num_decimal": {
+            "vk": {"win": 0x6E, "mac": 0x41},
+            "widget": ui.key_Del,
+            
+        },
+        "num_0": {
+            "vk": {"win": 0x60, "mac": 0x52},
+            "widget": ui.key_Ins,
+            
+        },
+        "num_1": {
+            "vk": {"win": 0x61, "mac": 0x53},
+            "widget": ui.key_one,
+            
+        },
+        "num_2": {
+            "vk": {"win": 0x62, "mac": 0x54},
+            "widget": ui.key_two,
+            
+        },
+        "num_3": {
+            "vk": {"win": 0x63, "mac": 0x55},
+            "widget": ui.key_three,
+            
+        },
+        "num_4": {
+            "vk": {"win": 0x64, "mac": 0x56},
+            "widget": ui.key_four,
+            
+        },
+        "num_5": {
+            "vk": {"win": 0x65, "mac": 0x57},
+            "widget": ui.key_five,
+            
+        },
+        "num_6": {
+            "vk": {"win": 0x66, "mac": 0x58},
+            "widget": ui.key_six,
+            
+        },
+        "num_7": {
+            "vk": {"win": 0x67, "mac": 0x59},
+            "widget": ui.key_seven,
+            
+        },
+        "num_8": {
+            "vk": {"win": 0x68, "mac": 0x5B},
+            "widget": ui.key_eight,
+            
+        },
+        "num_9": {
+            "vk": {"win": 0x69, "mac": 0x5C},
+            "widget": ui.key_nine,
+            
+        }
     }

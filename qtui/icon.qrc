@@ -1,0 +1,26 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>volume.svg</file>
+    <file>volume-1.svg</file>
+    <file>sun-dim.svg</file>
+    <file>rotate-ccw.svg</file>
+    <file>volume-2.svg</file>
+    <file>rewind.svg</file>
+    <file>plus.svg</file>
+    <file>pause.svg</file>
+    <file>option.svg</file>
+    <file>notepad-text.svg</file>
+    <file>move-left.svg</file>
+    <file>layout-dashboard.svg</file>
+    <file>keyboard.svg</file>
+    <file>grip-horizontal.svg</file>
+    <file>fast-forward.svg</file>
+    <file>command.svg</file>
+    <file>chevron-up.svg</file>
+    <file>arrow-up.svg</file>
+    <file>arrow-right.svg</file>
+    <file>arrow-left.svg</file>
+    <file>arrow-down.svg</file>
+    <file>arrow-big-up-dash.svg</file>
+  </qresource>
+</RCC>
